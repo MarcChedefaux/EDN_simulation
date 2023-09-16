@@ -6,7 +6,7 @@ import json
 
 url = "https://www.cngsante.fr/chiron/celine/finalnormcesp.html"
 
-def getSpecialities(tableSoup : BeautifulSoup):
+def getSpecialities(tableSoup : BeautifulSoup) -> (np.ndarray, np.ndarray):
     specialitesId = []
     specialitesTotal = []
 
@@ -28,9 +28,9 @@ def getSpecialities(tableSoup : BeautifulSoup):
     specialitesTotal, indTotal = np.unique(specialitesTotal, return_index=True)
     return specialitesId[np.argsort(indId)], specialitesTotal[np.argsort(indTotal)]
 
-def getCities(tableSoup : BeautifulSoup):
+def getCities(tableSoup : BeautifulSoup) -> np.ndarray:
     cities = []
-    cit = table.find_all("td", class_="rg")
+    cit = tableSoup.find_all("td", class_="rg")
     for c in cit :
         cities.append(c.get_text(strip=True).replace("Â", "").title())
 
@@ -42,7 +42,7 @@ def getCities(tableSoup : BeautifulSoup):
 
     return cities[np.argsort(ind)]
 
-def getPlaces(tableSoup : BeautifulSoup, specLength : int, citiLength):
+def getPlaces(tableSoup : BeautifulSoup, specLength : int, citiLength) -> np.ndarray:
     places = np.zeros((citiLength, specLength))
 
     placeAvailable = tableSoup.find_all("td", class_="rk")
@@ -53,7 +53,7 @@ def getPlaces(tableSoup : BeautifulSoup, specLength : int, citiLength):
 
     return places
 
-def saveSpecialitiesJson(specId : np.ndarray, specDesc : np.ndarray) :
+def saveSpecialitiesJson(specId : np.ndarray, specDesc : np.ndarray) -> None:
     specDict = []
     for i in range(len(specId)):
         sDict = {"Id":specId[i], "Name":specDesc[i], "choosenCoef" : 1, "abilityToIgnoreCity" : 0}
@@ -61,6 +61,15 @@ def saveSpecialitiesJson(specId : np.ndarray, specDesc : np.ndarray) :
 
     with (open("data/specialities.json", "w") as f):
         f.write(json.dumps(specDict, ensure_ascii=False, indent=2))
+
+def saveCitiesJson(cities : np.ndarray) -> None :
+    citiesDict = []
+    for i in range(len(cities)):
+        cDict = {"Name":cities[i], "choosenCoef" : 1}
+        citiesDict.append(cDict)
+
+    with (open("data/cities.json", "w") as f):
+        f.write(json.dumps(citiesDict, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__" :
@@ -78,4 +87,5 @@ if __name__ == "__main__" :
     df.to_pickle("data/placeAvailable.pkl")
 
     saveSpecialitiesJson(specId, specDesc)
+    saveCitiesJson(cities)
 
