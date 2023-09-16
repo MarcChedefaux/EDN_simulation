@@ -1,0 +1,272 @@
+[
+  {
+    "Id": "ATT",
+    "Name": "En attente de publication",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CMF",
+    "Name": "Chirurgie maxillo-faciale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "COR",
+    "Name": "Chirurgie orale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "COT",
+    "Name": "Chirurgie orthopédique et traumatologique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CPD",
+    "Name": "Chirurgie pédiatrique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CPR",
+    "Name": "Chirurgie plastique, reconstructrice et esthétique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CTC",
+    "Name": "Chirurgie thoracique et cardiovasculaire",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CVA",
+    "Name": "Chirurgie vasculaire",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "CVD",
+    "Name": "Chirurgie viscérale et digestive",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "GYO",
+    "Name": "Gynécologie obstétrique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "NCU",
+    "Name": "Neurochirurgie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "OPH",
+    "Name": "Ophtalmologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "ORL",
+    "Name": "Oto-rhino-laryngologie - chirurgie cervico-faciale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "URO",
+    "Name": "Urologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "ALL",
+    "Name": "Allergologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "ACP",
+    "Name": "Anatomie et cytologie pathologiques",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "ARE",
+    "Name": "Anesthésie-réanimation",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "DVE",
+    "Name": "Dermatologie et vénéréologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "EDN",
+    "Name": "Endocrinologie-diabétologie-nutrition",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "GEN",
+    "Name": "Génétique médicale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "GER",
+    "Name": "Gériatrie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "GYM",
+    "Name": "Gynécologie médicale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "HEM",
+    "Name": "Hématologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "HGE",
+    "Name": "Hépato-gastro-entérologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MIT",
+    "Name": "Maladies infectieuses et tropicales",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MCA",
+    "Name": "Médecine cardiovasculaire",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MGE",
+    "Name": "Médecine générale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MIR",
+    "Name": "Médecine intensive-réanimation",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MII",
+    "Name": "Médecine interne et immunologie clinique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MLE",
+    "Name": "Médecine légale et expertises médicales",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "NUC",
+    "Name": "Médecine nucléaire",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MPR",
+    "Name": "Médecine physique et de réadaptation",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MTR",
+    "Name": "Médecine et santé au travail",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MUR",
+    "Name": "Médecine dâurgence",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "MVA",
+    "Name": "Médecine vasculaire",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "NEP",
+    "Name": "Néphrologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "NEU",
+    "Name": "Neurologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "ONC",
+    "Name": "Oncologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "PED",
+    "Name": "Pédiatrie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "PNE",
+    "Name": "Pneumologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "PSY",
+    "Name": "Psychiatrie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "RAI",
+    "Name": "Radiologie et imagerie médicale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "RHU",
+    "Name": "Rhumatologie",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "SPU",
+    "Name": "Santé publique",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  },
+  {
+    "Id": "BM",
+    "Name": "Biologie médicale",
+    "choosenCoef": 1,
+    "abilityToIgnoreCity": 0
+  }
+]

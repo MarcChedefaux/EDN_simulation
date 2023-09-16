@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
+import json
 
 url = "https://www.cngsante.fr/chiron/celine/finalnormcesp.html"
 
@@ -52,6 +53,16 @@ def getPlaces(tableSoup : BeautifulSoup, specLength : int, citiLength):
 
     return places
 
+def saveSpecialitiesJson(specId : np.ndarray, specDesc : np.ndarray) :
+    specDict = []
+    for i in range(len(specId)):
+        sDict = {"Id":specId[i], "Name":specDesc[i], "choosenCoef" : 1, "abilityToIgnoreCity" : 0}
+        specDict.append(sDict)
+
+    with (open("data/specialities.json", "w") as f):
+        f.write(json.dumps(specDict, ensure_ascii=False, indent=2))
+
+
 if __name__ == "__main__" :
     response = requests.get(url, verify=False)
     soup = BeautifulSoup(response.text, "html.parser")
@@ -65,3 +76,6 @@ if __name__ == "__main__" :
 
     df = pd.DataFrame(data=places, index=cities, columns=specId)
     df.to_pickle("data/placeAvailable.pkl")
+
+    saveSpecialitiesJson(specId, specDesc)
+
