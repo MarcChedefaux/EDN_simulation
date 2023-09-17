@@ -122,8 +122,11 @@ if __name__ == "__main__" :
     places = getPlaces(table, len(specId), len(cities))
 
     df = pd.DataFrame(data=places, index=cities, columns=specId)
+    df = df.drop("ATT", axis = 1)
     df.to_pickle("data/placeAvailable.pkl")
-
+    
+    specId = specId[1:]
+    specDesc = specDesc[1:]
     saveSpecialitiesJson(specId, specDesc)
     saveCitiesJson(cities)
 

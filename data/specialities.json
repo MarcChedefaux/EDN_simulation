@@ -1,11 +1,5 @@
 [
   {
-    "Id": "ATT",
-    "Name": "En attente de publication",
-    "choosenCoef": 1,
-    "abilityToIgnoreCity": 0
-  },
-  {
     "Id": "CMF",
     "Name": "Chirurgie maxillo-faciale",
     "choosenCoef": 1,
